@@ -8,7 +8,9 @@ public:
     string createTitle(const string& title) 
 { return "<title>"+title+"</title"; /* TODO */ }
     string createHeader(const string& header, int level) 
-{ return ""; /* TODO */ }
+{ if (level < 1 || level > 6) 
+    {return "";}
+ return "<h" + to_string(level) + ">" + header + "</h" + to_string(level) + ">\n"; }
     string createParagraph(const string& text)
 { return "<p>".text."<p>"; /* TODO */ }
     string createLink(const string& url, const string& text)
