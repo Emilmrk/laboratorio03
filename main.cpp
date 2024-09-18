@@ -6,7 +6,7 @@ using namespace std;
 class HTMLGenerator {
 public:
     string createTitle(const string& title) 
-{ return ""; /* TODO */ }
+{ return "<title>"+title+"</title"; /* TODO */ }
     string createHeader(const string& header, int level) 
 { return ""; /* TODO */ }
     string createParagraph(const string& text)
